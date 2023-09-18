@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Teste</title>
   </head>
   <body>
-    <div class="container">
-      <!-- navbar.html -->
+    <div class="container"><!-- navbar.html -->
 <header>
   <a href="#" class="logo">Food teste<span>.</span></a>
   <div class="menuToggle" onclick="toggleMenu();"></div>
@@ -23,9 +26,9 @@
     </li>
   </ul>
 </header>
-
-      <section class="banner" id="banner">
-  <div class="content">
+</div>
+    <div><div class="parallax-container">
+  <div class="parallax-text">
     <h2>Always Choose Good</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -34,10 +37,25 @@
     </p>
     <a href="#" class="btn"> Our Menu</a>
   </div>
-</section>
 
+  <section class="parallax-section">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- slide 1 -->
+        <div class="swiper-slide slide-1"></div>
+
+        <!-- slide 2 -->
+        <div class="swiper-slide slide-2"></div>
+
+        <!-- slide 3 -->
+        <div class="swiper-slide slide-3"></div>
+      </div>
     </div>
+  </section>
+</div>
+</div>
 
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

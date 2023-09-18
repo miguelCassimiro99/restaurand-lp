@@ -16,6 +16,7 @@ header.sticky {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 header.sticky .logo {
+  font-family: "Playfair Display", serif;
   color: #111;
 }
 header .logo {
