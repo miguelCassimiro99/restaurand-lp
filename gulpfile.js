@@ -7,11 +7,11 @@ const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
-const htmlPaths = ['src/*.html', 'src/components/**/*.html', 'src/sections/**/*.html']
+const htmlPaths = ['src/*.html', 'src/components/*.html', 'src/sections/*.html']
 
 function buildHTML() {
   return gulp
-    .src(htmlPaths)
+    .src(['src/*.html', 'src/components/**/*.html', 'src/sections/**/*.html'])
     .pipe(fileInclude({prefix: '@@', basepath: '@file'}))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
