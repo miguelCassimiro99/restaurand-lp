@@ -1,0 +1,122 @@
+@import '../colors.scss';
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+
+  &.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    .logo {
+      color: #111;
+    }
+  }
+
+  .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+
+    span {
+      color: #ff0157;
+    }
+  }
+
+  .navigation {
+    position: relative;
+    display: flex;
+
+    li {
+      list-style: none;
+      margin-left: 40px;
+    }
+  }
+}
+
+header .navigation li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+ }
+ header.sticky .navigation li a{
+   color:#111;
+ }
+ header .navigation li a:hover
+ { 
+  color: #ff0157;
+ }
+
+ @media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+  
+  header .navigation {
+    display: none;
+  }
+  
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    
+    li {
+      margin-left: 0;
+    }
+    
+    li a {
+      text-decoration: none;
+      color: #111;
+      font-size: 1.6em;
+    }
+    
+    .conta {
+      margin-right: 0;
+    }
+  }
+  
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(https://cdn-icons-png.flaticon.com/512/2933/2933054.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 20px;
+    filter: invert(1);
+  }
+  
+  
+  .menuToggle.active {
+    background: url(https://w7.pngwing.com/pngs/427/26/png-transparent-x-cross-close-symbol-icon-button-gui-thumbnail.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px;
+  }
+  
+  header.sticky .menuToggle {
+    filter: invert(0);
+  }
+}
