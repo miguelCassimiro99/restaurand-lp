@@ -1,4 +1,5 @@
 @import 'imports.scss';
+@import './colors.scss';
 
 * {
   margin: 0;
@@ -23,4 +24,22 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
-/* Seu código CSS personalizado aqui */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0px;
+}
+
+.section-title {
+  font-family: $font-primary;
+  color: $vnda-primary-color;
+  font-size: 3rem;
+}
+
+.section-subtitle {
+  font-family: $font-secondary;
+  color: $vnda-third-color;
+  font-size: 1.3rem;
+  line-height: 50%;
+}
