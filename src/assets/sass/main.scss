@@ -43,3 +43,37 @@ h1, h2, h3 {
   font-size: 1.3rem;
   line-height: 50%;
 }
+
+
+.instersection-contact {
+  position: relative;
+}
+
+
+.over-section {
+  display: none;
+}
+
+
+@media (min-width: 769px) {
+  .over-section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    z-index: 40;
+    gap: 20px;
+
+    p {
+      font-family: $font-secondary;
+      color: $vnda-secondary-color;
+      font-size: 1.2rem;
+    }
+
+    img {
+      height: auto;
+      max-width: 350px;
+    }
+  }
+}

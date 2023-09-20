@@ -10,7 +10,10 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Teste</title>
+    <script
+      src="https://kit.fontawesome.com/062c903d90.js"
+      crossorigin="anonymous"></script>
+    <title>Food</title>
   </head>
   <body>
     <!-- TODO snap center on each section  -->
@@ -21,7 +24,21 @@
     @@include('./sections/catalog.html')
     @@include('./sections/third-section.html')
     @@include('./sections/carousel.html')
-    @@include('./sections/image-section.html')
+
+    <div class="instersection-contact">
+      <div class="over-section">
+        <p>Lorem ipsum dolor sit amet</p>
+        <p>Lorem ipsum dolor sit amet</p>
+
+        <img
+          src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80"
+          alt="chef"
+          data-aos="fade-up"
+          data-aos-delay="300" />
+      </div>
+      @@include('./sections/image-section.html')
+      @@include('./sections/contact.html') @@include('./sections/footer.html')
+    </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

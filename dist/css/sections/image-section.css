@@ -1,6 +1,5 @@
 .image-section {
-  position: relative;
-  height: 50vh;
+  min-height: 60vh;
   width: 100vw;
   overflow: hidden;
   display: flex;

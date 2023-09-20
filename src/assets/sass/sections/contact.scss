@@ -1,0 +1,93 @@
+@import '../colors.scss';
+@import '../fonts.scss';
+
+.contatct-section {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  gap:80px;
+
+  .map {
+    margin-top: 30px;
+    text-align: center;
+    h2 {
+      color: $vnda-third-color;
+      font-family: $font-secondary;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      max-width: 100%;
+      overflow: hidden; 
+    }
+
+    @media (min-width: 769px) {
+      margin-top: 200px;
+    }
+  }
+
+  .newsletter form {
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    @media (min-width: 769px) {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+
+  .newsletter {
+    form {
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      p {
+        font-family: $font-secondary;
+        font-size: 1rem;
+        max-width: 250px;
+        color: $vnda-secondary-color;
+      }
+
+      input {
+        font-size:18px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width:300px;
+        border:none;
+        border-bottom:1px solid 
+      }
+
+      .cta {
+        font-size: 1em;
+        color: #fff;
+        background: #ff0157;
+        display: inline-block;
+        padding: 10px 30px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+      }
+    }
+  }
+
+}

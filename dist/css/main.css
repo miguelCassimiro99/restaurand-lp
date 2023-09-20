@@ -683,8 +683,7 @@ header .navigation li a:hover {
 }
 
 .image-section {
-  position: relative;
-  height: 50vh;
+  min-height: 60vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
@@ -717,6 +716,157 @@ header .navigation li a:hover {
     height: auto;
   }
 }
+.contatct-section {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 80px;
+}
+.contatct-section .map {
+  margin-top: 30px;
+  text-align: center;
+}
+.contatct-section .map h2 {
+  color: #ff0157;
+  font-family: "PT Sans", sans-serif;
+}
+.contatct-section .map .map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 769px) {
+  .contatct-section .map {
+    margin-top: 200px;
+  }
+}
+.contatct-section .newsletter form {
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+@media (min-width: 769px) {
+  .contatct-section .newsletter form {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+.contatct-section .newsletter form:focus {
+  border: none;
+  outline: none;
+}
+.contatct-section .newsletter form p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
+  max-width: 250px;
+  color: #151a28;
+}
+.contatct-section .newsletter form input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid;
+}
+.contatct-section .newsletter form .cta {
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+footer .reserved {
+  text-align: center;
+  width: 100%;
+  font-size: 0.875rem;
+}
+footer .footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  padding: 30px;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  footer .footer-container {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 1024px;
+  }
+}
+footer .footer-container .footer-logo {
+  margin-bottom: 20px;
+}
+footer .footer-container .footer-logo .logo {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3em;
+  text-decoration: none;
+}
+footer .footer-container .footer-logo .logo span {
+  color: #ff0157;
+}
+footer .footer-container .footer-links ul,
+footer .footer-container .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-container .footer-links ul li,
+footer .footer-container .footer-social ul li {
+  margin-bottom: 10px;
+  font-family: "PT Sans", sans-serif;
+}
+footer .footer-container .footer-links ul li a,
+footer .footer-container .footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer .footer-container .footer-links ul li a:hover,
+footer .footer-container .footer-social ul li a:hover {
+  color: #ff0157;
+}
+footer .footer-container .footer-links ul li a i,
+footer .footer-container .footer-social ul li a i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -758,4 +908,33 @@ h1, h2, h3 {
   color: #ff0157;
   font-size: 1.3rem;
   line-height: 50%;
+}
+
+.instersection-contact {
+  position: relative;
+}
+
+.over-section {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .over-section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    z-index: 40;
+    gap: 20px;
+  }
+  .over-section p {
+    font-family: "PT Sans", sans-serif;
+    color: #151a28;
+    font-size: 1.2rem;
+  }
+  .over-section img {
+    height: auto;
+    max-width: 350px;
+  }
 }
