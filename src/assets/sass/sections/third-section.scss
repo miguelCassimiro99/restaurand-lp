@@ -7,7 +7,8 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
+  width: 100%;
 
   .cta {
     font-size: 1em;
@@ -24,11 +25,12 @@
 
   .phrase {
     height: 50vh;
-    max-width: 1024px;
+    width: 100%;
     padding: 50px;
     text-align: center;
     display: flex;
     align-items: center;
+    background: #fff;
 
     p {
       font-size: 2rem;
@@ -70,6 +72,8 @@
     }
 
     @media (min-width: 769px) {
+      height: 80vh;
+
       .left-text {
         flex: 1;
       }
@@ -94,7 +98,7 @@
 
   @media (min-width: 769px) {
     .phrase {
-      height: 50vh;
+      height: 70vh;
       max-width: 1024px;
       padding: 50px;
       text-align: center;
