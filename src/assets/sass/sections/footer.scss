@@ -14,7 +14,13 @@ footer {
     text-align: center;
     width: 100%;
     font-size: 0.875rem;
-    
+    padding-inline: 30px;
+  }
+
+  @media (min-width: 769px) {
+    .reserved {
+      padding-inline: 0px;
+    }
   }
 
   .footer-container {
