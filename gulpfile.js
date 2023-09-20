@@ -21,9 +21,8 @@ function compileSass() {
   return gulp
     .src('src/assets/sass/**/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist/css'))
     .pipe(cleanCSS())
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(concat('main.min.css'))
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
 }
@@ -31,11 +30,8 @@ function compileSass() {
 function copyScripts() {
   return gulp
     .src('src/scripts/**/**/*.js')
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('dist/js'))
-    .pipe(concat('scripts.js'))
     .pipe(uglify())
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.stream());
 }
