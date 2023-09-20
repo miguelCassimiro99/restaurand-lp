@@ -459,9 +459,18 @@ header .navigation li a:hover {
   overflow: hidden;
   margin: 40px 0;
   padding: 50px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 .catalog .catalog-header {
   text-align: center;
+}
+.catalog .btn {
+  text-decoration: none;
+  color: #151a28;
 }
 .catalog .content {
   display: flex;
@@ -469,22 +478,23 @@ header .navigation li a:hover {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   margin-top: 40px;
+  max-width: 1024px;
 }
 .catalog .content .box {
-  width: 300px;
+  width: 250px;
   margin: 20px;
 }
 .catalog .content .box .imgBx {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
   transition: box-shadow 1s ease;
 }
 .catalog .content .box .imgBx .price {
   display: block;
   position: absolute;
-  bottom: 7px;
+  bottom: 0px;
   z-index: 10;
   color: #ecb546;
   width: 100%;
@@ -492,6 +502,7 @@ header .navigation li a:hover {
   text-align: center;
   font-size: 1.5rem;
   width: 100%;
+  background: transparent;
 }
 .catalog .content .box .imgBx img {
   position: absolute;
@@ -507,13 +518,14 @@ header .navigation li a:hover {
   position: absolute;
   z-index: 10;
   text-shadow: 10px 10px 25px rgb(81, 67, 21), -10px 10px 25px rgb(81, 67, 21), -10px -10px 25px rgb(81, 67, 21), 10px -10px 25px rgb(81, 67, 21);
+  color: #e9ecea;
+  box-shadow: inset 0px -30px 8px -10px rgba(17, 17, 17, 0.8156862745);
 }
 .catalog .content .box .imgBx:hover img {
   transform: scale(1.1);
   max-width: 100%; /* Impede que a imagem exceda a largura da div */
   max-height: 100%;
   z-index: 0;
-  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .catalog .content .box .text {
   padding: 15px 0 5px;
