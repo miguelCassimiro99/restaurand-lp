@@ -64,7 +64,7 @@
   display: block;
   width: 300px;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #151a28;
 }
 .contatct-section .newsletter form .cta {
   font-size: 1em;

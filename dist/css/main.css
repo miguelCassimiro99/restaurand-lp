@@ -18,7 +18,7 @@ header.sticky {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 header.sticky .logo {
-  color: #111;
+  color: #151a28;
 }
 header .logo {
   font-family: "Playfair Display", serif;
@@ -222,6 +222,7 @@ header .navigation li a:hover {
 }
 .menu .text-content p {
   font-family: "PT Sans", sans-serif;
+  color: #131217;
 }
 .menu .text-content a {
   margin-bottom: 30px;
@@ -407,6 +408,9 @@ header .navigation li a:hover {
   align-items: start;
   text-align: left;
 }
+.second-section .second-section-content .left .about-content p {
+  color: #131217;
+}
 @media (min-width: 768px) {
   .second-section .second-section-content.split-section .left {
     flex: 1;
@@ -543,7 +547,7 @@ header .navigation li a:hover {
 }
 .catalog .content .box .text h3 {
   font-weight: 400;
-  color: #111;
+  color: #151a28;
 }
 .catalog .content .box .cta {
   padding: 2px 20px;
@@ -582,6 +586,7 @@ header .navigation li a:hover {
   display: flex;
   align-items: center;
   background: #fff;
+  color: #151a28;
 }
 .third-section .phrase p {
   font-size: 2rem;
@@ -782,7 +787,7 @@ header .navigation li a:hover {
   display: block;
   width: 300px;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #151a28;
 }
 .contatct-section .newsletter form .cta {
   font-size: 1em;
@@ -798,7 +803,7 @@ header .navigation li a:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: #151a28;
   color: #fff;
   padding: 20px 0;
   display: flex;
@@ -899,7 +904,7 @@ h1, h2, h3 {
 
 .section-title {
   font-family: "Playfair Display", serif;
-  color: #131217;
+  color: #151a28;
   font-size: 3rem;
 }
 
