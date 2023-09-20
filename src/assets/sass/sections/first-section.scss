@@ -83,6 +83,10 @@
     width: auto;
     z-index: 3;
   }
+
+  img.menu-image-3 {
+    display: none;
+  }
 }
 
 .menu-image-1 {
@@ -122,6 +126,10 @@
       max-width: 100%;
       height: auto;
       min-width: 100%;
+    }
+
+    img.menu-image-3 {
+      display: block;
     }
   }
 

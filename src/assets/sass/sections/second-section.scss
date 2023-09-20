@@ -1,0 +1,115 @@
+.second-section {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .transition-image {
+    max-width: 350px;
+    height: auto;
+    margin-top: -25px;
+    margin-left: 25%;
+  }
+
+  @media (min-width: 768px) {
+    .second-section-content {
+      position: relative;
+      .transition-image {
+        position: absolute;
+        max-width: 350px;
+        height: auto;
+        right: 0;
+        left: 45%;
+        top: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .second-section-content {
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    .left {
+      padding: 30px;
+
+      .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px;
+        align-items: start;
+        text-align: left;
+      }
+    }
+  
+    @media (min-width: 768px) {
+
+
+
+      &.split-section {
+        .left {
+          flex: 1;
+          padding-right: 20px;
+        }
+  
+        .right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          background-size: cover;
+          background-position: center;
+          
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; // Para evitar distorções
+          }
+        }
+      }
+    }
+  
+      // Em dispositivos móveis, use o texto sobre o fundo da imagem
+    @media (max-width: 767px) {
+      &.split-section {
+        flex-direction: column;
+        text-align: center;
+
+        .left,
+        .right {
+          flex: none; // Restaura o comportamento padrão do fluxo
+          width: 100%;
+        }
+
+        .right {
+          background-size: cover;
+          background-position: center;
+          position: relative; // Adicione position:relative
+          height: 100%;
+          width: 100%;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Para evitar distorções
+            display: block; // Exibir a imagem em dispositivos móveis
+          }
+
+          p {
+            background: rgba(0, 0, 0, 0.7); // Fundo semi-transparente para o texto
+            color: #fff;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,8 @@
 .parallax-container {
   position: relative;
   height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
   
   .parallax-text {
     position: absolute;
