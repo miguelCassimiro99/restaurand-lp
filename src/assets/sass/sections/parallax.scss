@@ -2,6 +2,7 @@
 @import '../colors.scss';
 
 .parallax-container {
+  scroll-snap-align: start;
   position: relative;
   height: 100vh;
   max-width: 100vw;
