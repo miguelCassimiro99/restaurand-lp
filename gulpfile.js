@@ -11,7 +11,7 @@ const htmlPaths = ['src/*.html', 'src/components/*.html', 'src/sections/*.html']
 
 function buildHTML() {
   return gulp
-    .src(['src/*.html', 'src/components/**/*.html', 'src/sections/**/*.html'])
+    .src(['src/*.html'])
     .pipe(fileInclude({prefix: '@@', basepath: '@file'}))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
