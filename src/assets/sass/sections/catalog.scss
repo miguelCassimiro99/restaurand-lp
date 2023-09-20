@@ -1,0 +1,114 @@
+@import '../colors.scss';
+
+.catalog {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  margin: 40px 0;
+  padding: 50px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  .catalog-header {
+    text-align: center;
+  }
+
+  .btn {
+    text-decoration: none;
+    color: $vnda-secondary-color;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 1024px;
+
+    .box {
+      width: 250px;
+      margin: 20px;
+
+      .imgBx {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        transition: box-shadow 1s ease;
+
+        .price {
+          display: block;
+          position: absolute;
+          bottom: 0px;
+          z-index: 10;
+          color: $vnda-gold-color;
+          width: 100%;
+          font-weight: bold;
+          text-align: center;
+          font-size: 1.5rem;
+          width: 100%;
+          background: transparent;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 1s ease; 
+        }
+
+        &:hover {
+          .price {
+            display: block;
+            position: absolute;
+            z-index: 10;
+            text-shadow: 10px 10px 25px rgb(81,67,21),
+            -10px 10px 25px rgb(81,67,21),
+            -10px -10px 25px rgb(81,67,21),
+            10px -10px 25px rgb(81,67,21);
+            color: $vnda-gray-color;
+            box-shadow:  inset 0px -30px 8px -10px #111111d0;
+          }
+
+          img {
+            transform: scale(1.1);
+            max-width: 100%; /* Impede que a imagem exceda a largura da div */
+            max-height: 100%;
+            z-index: 0;
+          }
+        }
+
+
+      }
+
+      
+      .text {
+        padding: 15px 0 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        h3 {
+          font-weight: 400;
+          color: #111;
+        }
+      }
+
+      .cta {
+        padding: 2px 20px;
+        background-color: $vnda-third-color;
+        color: $vnda-gray-color;
+        text-decoration: none;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      }
+    }
+  }
+}

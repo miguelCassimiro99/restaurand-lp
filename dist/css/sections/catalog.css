@@ -1,0 +1,93 @@
+.catalog {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  margin: 40px 0;
+  padding: 50px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.catalog .catalog-header {
+  text-align: center;
+}
+.catalog .btn {
+  text-decoration: none;
+  color: #151a28;
+}
+.catalog .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 1024px;
+}
+.catalog .content .box {
+  width: 250px;
+  margin: 20px;
+}
+.catalog .content .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  transition: box-shadow 1s ease;
+}
+.catalog .content .box .imgBx .price {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  color: #ecb546;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  background: transparent;
+}
+.catalog .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+.catalog .content .box .imgBx:hover .price {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  text-shadow: 10px 10px 25px rgb(81, 67, 21), -10px 10px 25px rgb(81, 67, 21), -10px -10px 25px rgb(81, 67, 21), 10px -10px 25px rgb(81, 67, 21);
+  color: #e9ecea;
+  box-shadow: inset 0px -30px 8px -10px rgba(17, 17, 17, 0.8156862745);
+}
+.catalog .content .box .imgBx:hover img {
+  transform: scale(1.1);
+  max-width: 100%; /* Impede que a imagem exceda a largura da div */
+  max-height: 100%;
+  z-index: 0;
+}
+.catalog .content .box .text {
+  padding: 15px 0 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.catalog .content .box .text h3 {
+  font-weight: 400;
+  color: #111;
+}
+.catalog .content .box .cta {
+  padding: 2px 20px;
+  background-color: #ff0157;
+  color: #e9ecea;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
