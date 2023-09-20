@@ -10,5 +10,5 @@ window.addEventListener('scroll', function(){
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
     document.body.classList.toggle('no-scroll');
-
-	}
+        
+}
